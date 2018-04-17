@@ -23,6 +23,7 @@ require_once $_tests_dir . '/includes/functions.php';
  */
 function _manually_load_plugin() {
 	require dirname( dirname( __FILE__ ) ) . '/wpdtrt-contentsections.php';
+	require dirname( dirname( __FILE__ ) ) . '/vendor/ludek/better-anchor-links/auto-anchor-list.php';
 }
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 
