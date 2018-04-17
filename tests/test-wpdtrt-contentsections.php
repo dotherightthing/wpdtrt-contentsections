@@ -57,8 +57,7 @@ class wpdtrt_contentsectionsTest extends WP_UnitTestCase {
 
 	    $this->post_id_1 = $this->create_post( array(
 	    	'post_title' => 'DTRT Content Sections test',
-	    	'post_date' => '2018-03-14 19:00:00',
-	    	'post_content' => 'This is a simple test'
+	    	'post_content' => '<h2>Heading One</h2><p>This is the first heading.</p><p>There would usually be a gallery here too.</p><h2>Heading Two</h2><p>This is the second heading.</p><p>There would usually be a gallery here too.</p>'
 	    ) );
     }
 
@@ -106,17 +105,41 @@ class wpdtrt_contentsectionsTest extends WP_UnitTestCase {
 
     // ########## TEST ########## //
 
-	/**
-	 * Test shortcodes
-	 * 	trim() removes line break added by WordPress
-     * @see https://gist.github.com/dotherightthing/debaa6196e1f5258b544ace1a6c484de
-	 */
-	public function test_placeholder() {
+    /**
+     * Test better-anchor-links dependency injection
+     * @uses ludek/better-anchor-links
+     */
+    public function test_dependency_injection() {
 
-		$this->assertEquals(
-			'abc123',
-			'abc123',
-			'Strings do not match'
-		);
+        $this->go_to(
+            get_post_permalink( $this->post_id_1 )
+        );
+
+        $content = get_post_field('post_content', $this->post_id_1);
+
+        $this->assertContains(
+            "<div class='mwm-aal-title'>",
+            do_shortcode( $content ),
+            'Anchor links list not injected'
+        );
+    }
+
+	/**
+	 * Test section injection
+     * @uses ludek/better-anchor-links
+	 */
+	public function test_section_injection() {
+
+        $this->go_to(
+            get_post_permalink( $this->post_id_1 )
+        );
+
+        $content = get_post_field('post_content', $this->post_id_1);
+
+        $this->assertContains(
+            '<section id="heading-one" class="scrollto" tabindex="-1">',
+            do_shortcode( $content ),
+            'Section tags not injected'
+        );
 	}
 }
