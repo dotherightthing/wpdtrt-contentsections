@@ -1,0 +1,42 @@
+{
+	"name": "dotherightthing/wpdtrt-contentsections",
+	"description": "Split the WordPress content area into sections.",
+	"type": "library",
+    "keywords": ["html5", "section", "block", "heading", "split"],
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Dan Smith",
+            "email": "dev@dotherightthing.co.nz",
+            "homepage": "https://github.com/dotherightthing/wpdtrt-contentsections",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@dotherightthing.co.nz",
+        "issues": "https://github.com/dotherightthing/wpdtrt-contentsections/issues"
+    },
+    "require": {
+        "dotherightthing/wpdtrt-plugin": "^1.0.0",
+		"tgmpa/tgm-plugin-activation": "2.6.*"
+    },
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.packagist.com/dotherightthing/"
+        },
+        {
+            "packagist.org": false
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+	"require-dev": {
+		"phpdocumentor/phpdocumentor": "2.9.0",
+		"phpunit/phpunit": "^5.7",
+		"psy/psysh": "~0.6",
+		"wp-cli/wp-cli": "~0.22"
+	}
+}

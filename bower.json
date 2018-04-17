@@ -1,0 +1,21 @@
+{
+  "name": "wpdtrt-contentsections",
+  "version": "0.0.1",
+  "description": "Split the WordPress content area into sections.",
+  "main": "wpdtrt-contentsections.php",
+  "authors": [
+    {
+      "name": "Dan Smith",
+      "email": "dev@dotherightthing.co.nz"
+    }
+  ],
+  "dependencies": {},
+  "license": "All Rights Reserved",
+  "homepage": "https://github.com/dotherightthing/wpdtrt-contentsections",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor"
+  ],
+  "private": true
+}
