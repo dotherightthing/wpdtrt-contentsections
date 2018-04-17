@@ -11,3 +11,7 @@ Please read [DTRT WP Plugin: Setup and Maintenance](https://github.com/dotherigh
 ## WordPress Installation and Usage
 
 Please read the [WordPress readme.txt](readme.txt).
+
+## Dependencies
+
+1. The content is split at the anchor points provided by [Better Anchor Links](https://wordpress.org/plugins/better-anchor-links/).

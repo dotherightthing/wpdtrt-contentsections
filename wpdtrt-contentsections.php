@@ -171,7 +171,7 @@ if( ! defined( 'WPDTRT_CONTENTSECTIONS_URL' ) ) {
         'instance_options' => $instance_options,
         'version' => WPDTRT_CONTENTSECTIONS_VERSION,
         'plugin_dependencies' => array(
-          // content splitting occurs at BAL anchors
+          // Dependency: Content splitting occurs at anchors
           array(
             'name'      => 'Better Anchor Links',
             'slug'      => 'better-anchor-links',
