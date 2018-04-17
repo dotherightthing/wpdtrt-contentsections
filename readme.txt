@@ -22,29 +22,6 @@ Split the WordPress content area into sections.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. Use the Settings->DTRT Content Sections screen to configure the plugin
 
-== Frequently Asked Questions ==
-
-= How do I use the widget? =
-
-One or more widgets can be displayed within one or more sidebars:
-
-1. Locate the widget: Appearance > Widgets > *DTRT Content Sections Widget*
-2. Drag and drop the widget into one of your sidebars
-3. Add a *Title*
-4. Specify options
-
-= How do I use the shortcode? =
-
-```
-<!-- within the editor -->
-[wpdtrt_contentsections option="value"]
-
-// in a PHP template, as a template tag
-<?php echo do_shortcode( '[wpdtrt_contentsections option="value"]' ); ?>
-```
-
-Please refer to the *Shortcode Options* on Settings->DTRT Content Sections.
-
 == Screenshots ==
 
 1. The caption for ./images/screenshot-1.(png|jpg|jpeg|gif)
