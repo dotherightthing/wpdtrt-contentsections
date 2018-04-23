@@ -1,10 +1,20 @@
-/**
- * Styles for the public front-end
- *
- * @package     WPDTRT_Contentsections
- * @version 	0.0.1
- * @since       0.7.0
- */
+//
+// Styles for the public front-end
+//
+// @package     WPDTRT_Contentsections
+// @version 	0.0.1
+// @since       0.7.0
+//
 
 @import "vendor/dotherightthing/wpdtrt-plugin/scss/_variables.scss";
 @import "vendor/dotherightthing/wpdtrt-plugin/scss/_extends.scss";
+@import "variables";
+@import "extends";
+
+// -------------------------------------------------------------------
+// Styles
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+// Media Queries
+// -------------------------------------------------------------------
