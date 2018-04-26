@@ -172,6 +172,8 @@ if( ! defined( 'WPDTRT_CONTENTSECTIONS_URL' ) ) {
           'demo_shortcode_title' => __('Demo shortcode', 'wpdtrt-contentsections'),
           'demo_data_description' => __('This demo was generated from the following data', 'wpdtrt-contentsections'),
           'demo_date_last_updated' => __('Data last updated', 'wpdtrt-contentsections'),
+          'demo_data_length' => __('results', 'wpdtrt-contentsections'),
+          'demo_data_displayed_length' => __('results displayed', 'wpdtrt-contentsections'),
         ),
         'plugin_options' => $plugin_options,
         'instance_options' => $instance_options,
