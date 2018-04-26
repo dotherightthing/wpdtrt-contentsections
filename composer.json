@@ -1,7 +1,7 @@
 {
-	"name": "dotherightthing/wpdtrt-contentsections",
-	"description": "Split the WordPress content area into sections.",
-	"type": "library",
+    "name": "dotherightthing/wpdtrt-contentsections",
+    "description": "Split the WordPress content area into sections.",
+    "type": "library",
     "keywords": ["html5", "section", "block", "heading", "split"],
     "license": "ISC",
     "authors": [
