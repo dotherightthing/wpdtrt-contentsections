@@ -6,7 +6,7 @@ Tags: html5, section, block, heading, split
 Requires at least: 4.9.5
 Tested up to: 4.9.5
 Requires PHP: 5.6.30
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,9 @@ Split the WordPress content area into sections.
 
 == Changelog ==
 
+= 0.0.4 =
+* Update wpdtrt-plugin
+
 = 0.0.3 =
 * Migrate Bower & NPM to Yarn
 * Update Node from 6.11.2 to 8.11.1
@@ -38,6 +41,9 @@ Split the WordPress content area into sections.
 * Fix default .pot file
 * Add tests
 * Update wpdtrt-plugin
+
+= 0.0.2 =
+* Bump version
 
 = 0.0.1 =
 * Initial version
