@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "wpdtrt-contentsections",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Split the WordPress content area into sections.",
   "main": "wpdtrt-contentsections.php",
   "person": {

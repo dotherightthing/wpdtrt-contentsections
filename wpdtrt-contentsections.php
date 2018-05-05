@@ -3,7 +3,7 @@
  * Plugin Name:  DTRT Content Sections
  * Plugin URI:   https://github.com/dotherightthing/wpdtrt-contentsections
  * Description:  Split the WordPress content area into sections.
- * Version:      0.0.4
+ * Version:      0.0.5
  * Author:       Dan Smith
  * Author URI:   https://profiles.wordpress.org/dotherightthingnz
  * License:      GPLv2 or later
@@ -56,7 +56,7 @@ if( ! defined( 'WPDTRT_CONTENTSECTIONS_VERSION' ) ) {
  * @version   0.0.1
  * @since     0.7.0
  */
-  define( 'WPDTRT_CONTENTSECTIONS_VERSION', '0.0.4' );
+  define( 'WPDTRT_CONTENTSECTIONS_VERSION', '0.0.5' );
 }
 
 if( ! defined( 'WPDTRT_CONTENTSECTIONS_PATH' ) ) {
