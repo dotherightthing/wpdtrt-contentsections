@@ -30,7 +30,7 @@ Split the WordPress content area into sections.
 == Changelog ==
 
 = 0.0.4 =
-* Update wpdtrt-plugin
+* Update wpdtrt-plugin to 1.3.1
 
 = 0.0.3 =
 * Migrate Bower & NPM to Yarn
@@ -40,7 +40,7 @@ Split the WordPress content area into sections.
 * Change tag badge to release badge
 * Fix default .pot file
 * Add tests
-* Update wpdtrt-plugin
+* Update wpdtrt-plugin to 1.2.30
 
 = 0.0.2 =
 * Bump version
