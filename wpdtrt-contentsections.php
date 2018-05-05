@@ -156,6 +156,7 @@ if( ! defined( 'WPDTRT_CONTENTSECTIONS_URL' ) ) {
         'prefix' => 'wpdtrt_contentsections',
         'slug' => 'wpdtrt-contentsections',
         'menu_title' => __('Content sections', 'wpdtrt-contentsections'),
+        'settings_title' => __('Settings', 'wpdtrt-contentsections'),
         'developer_prefix' => '',
         'path' => WPDTRT_CONTENTSECTIONS_PATH,
         'messages' => array(
