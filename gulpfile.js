@@ -8,7 +8,7 @@
  *    gulp dist --gulpfile ./vendor/dotherightthing/wpdtrt-plugin/gulpfile.js --cwd ./
  *
  * @package     WPDTRT_Contentsections
- * @version 	0.0.6
+ * @version 	0.0.7
  * @since       0.7.0
  */
  
