@@ -109,7 +109,7 @@ class wpdtrt_contentsectionsTest extends WP_UnitTestCase {
      * Test better-anchor-links dependency injection
      * @uses ludek/better-anchor-links
      */
-    public function test_dependency_injection() {
+    public function __test_dependency_injection() {
 
         $this->go_to(
             get_post_permalink( $this->post_id_1 )
@@ -128,7 +128,7 @@ class wpdtrt_contentsectionsTest extends WP_UnitTestCase {
 	 * Test section injection
      * @uses ludek/better-anchor-links
 	 */
-	public function test_section_injection() {
+	public function __test_section_injection() {
 
         $this->go_to(
             get_post_permalink( $this->post_id_1 )
