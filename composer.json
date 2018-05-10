@@ -17,8 +17,7 @@
         "issues": "https://github.com/dotherightthing/wpdtrt-contentsections/issues"
     },
     "require": {
-        "dotherightthing/wpdtrt-plugin": "^1.0.0",
-        "tgmpa/tgm-plugin-activation": "2.6.*"
+        "dotherightthing/wpdtrt-plugin": "^1.0.0"
     },
     "minimum-stability": "stable",
     "repositories": [
