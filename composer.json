@@ -17,7 +17,8 @@
         "issues": "https://github.com/dotherightthing/wpdtrt-contentsections/issues"
     },
     "require": {
-        "dotherightthing/wpdtrt-plugin": "^1.0.0"
+        "dotherightthing/wpdtrt-plugin": "^1.0.0",
+        "tgmpa/tgm-plugin-activation": "2.6.*"
     },
     "minimum-stability": "stable",
     "repositories": [
@@ -33,6 +34,10 @@
         "vendor-dir": "vendor"
     },
     "require-dev": {
-        "ludek/better-anchor-links": "1.7.5"
+        "ludek/better-anchor-links": "1.7.5",
+        "phpdocumentor/phpdocumentor": "2.9.0",
+        "phpunit/phpunit": "^5.7",
+        "psy/psysh": "~0.6",
+        "wp-cli/wp-cli": "~0.22"
     }
 }
