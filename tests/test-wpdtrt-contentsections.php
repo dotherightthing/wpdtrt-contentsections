@@ -12,7 +12,7 @@
  *
  * @package     WPDTRT_Contentsections
  * @version     0.0.1
- * @since       0.7.0
+ * @since       0.7.0 DTRT WordPress Plugin Boilerplate Generator
  *
  * @see http://kb.dotherightthing.dan/php/wordpress/php-unit-testing-revisited/ - Links
  * @see http://richardsweeney.com/testing-integrations/
@@ -65,7 +65,7 @@ class wpdtrt_contentsectionsTest extends WP_UnitTestCase {
      * TearDown
      * Automatically called by PHPUnit after each test method is run
      *
-     * @see https://codesymphony.co/writing-wordpress-plugin-unit-tests/#object-factories     
+     * @see https://codesymphony.co/writing-wordpress-plugin-unit-tests/#object-factories
      */
     public function tearDown() {
 

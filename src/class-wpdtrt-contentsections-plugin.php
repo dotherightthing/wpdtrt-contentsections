@@ -3,7 +3,7 @@
  * Plugin sub class.
  *
  * @package WPDTRT_Contentsections
- * @since   0.7.0
+ * @since   0.7.16 DTRT WordPress Plugin Boilerplate Generator
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * @since   1.0.0
  */
-class WPDTRT_Contentsections_Plugin extends DoTheRightThing\WPDTRT_Plugin\r_1_4_21\Plugin {
+class WPDTRT_Contentsections_Plugin extends DoTheRightThing\WPDTRT_Plugin_Boilerplate\r_1_4_22\Plugin {
 
 	/**
 	 * Supplement plugin initialisation.

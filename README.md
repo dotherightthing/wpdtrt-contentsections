@@ -6,7 +6,7 @@ Split the WordPress content area into sections.
 
 ## Setup and Maintenance
 
-Please read [DTRT WP Plugin: Setup and Maintenance](https://github.com/dotherightthing/wpdtrt-plugin#setup-and-maintenance).
+Please read [DTRT WordPress Plugin Boilerplate: Workflows](https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Workflows).
 
 ## WordPress Installation and Usage
 
