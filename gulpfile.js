@@ -9,6 +9,6 @@
  *
  * @package     WPDTRT_Contentsections
  * @version 	0.1.3
- * @since       0.7.0
+ * @since       0.7.0 DTRT WordPress Plugin Boilerplate Generator
  */
  

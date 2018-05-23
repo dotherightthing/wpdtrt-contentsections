@@ -23,7 +23,7 @@
  *
  * @package     WPDTRT_Contentsections
  * @version     0.0.1
- * @since       0.7.0
+ * @since       0.7.0 DTRT WordPress Plugin Boilerplate Generator
  */
 
 // if uninstall.php is not called by WordPress, die
