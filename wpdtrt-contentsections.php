@@ -34,40 +34,40 @@
  */
 
 if ( ! defined( 'WPDTRT_CONTENTSECTIONS_VERSION' ) ) {
-  /**
-   * Plugin version.
-   *
-   * WP provides get_plugin_data(), but it only works within WP Admin,
-   * so we define a constant instead.
-   *
-   * @see $plugin_data = get_plugin_data( __FILE__ ); $plugin_version = $plugin_data['Version'];
-   * @see https://wordpress.stackexchange.com/questions/18268/i-want-to-get-a-plugin-version-number-dynamically
-   */
-  define( 'WPDTRT_CONTENTSECTIONS_VERSION', '0.1.3' );
+	/**
+	 * Plugin version.
+	 *
+	 * WP provides get_plugin_data(), but it only works within WP Admin,
+	 * so we define a constant instead.
+	 *
+	 * @see $plugin_data = get_plugin_data( __FILE__ ); $plugin_version = $plugin_data['Version'];
+	 * @see https://wordpress.stackexchange.com/questions/18268/i-want-to-get-a-plugin-version-number-dynamically
+	 */
+	define( 'WPDTRT_CONTENTSECTIONS_VERSION', '0.1.3' );
 }
 
 if ( ! defined( 'WPDTRT_CONTENTSECTIONS_PATH' ) ) {
-  /**
-   * Plugin directory filesystem path.
-   *
-   * @param string $file
-   * @return The filesystem directory path (with trailing slash)
-   * @see https://developer.wordpress.org/reference/functions/plugin_dir_path/
-   * @see https://developer.wordpress.org/plugins/the-basics/best-practices/#prefix-everything
-   */
-  define( 'WPDTRT_CONTENTSECTIONS_PATH', plugin_dir_path( __FILE__ ) );
+	/**
+	 * Plugin directory filesystem path.
+	 *
+	 * @param string $file
+	 * @return The filesystem directory path (with trailing slash)
+	 * @see https://developer.wordpress.org/reference/functions/plugin_dir_path/
+	 * @see https://developer.wordpress.org/plugins/the-basics/best-practices/#prefix-everything
+	 */
+	define( 'WPDTRT_CONTENTSECTIONS_PATH', plugin_dir_path( __FILE__ ) );
 }
 
 if ( ! defined( 'WPDTRT_CONTENTSECTIONS_URL' ) ) {
-  /**
-   * Plugin directory URL path.
-   *
-   * @param string $file
-   * @return The URL (with trailing slash)
-   * @see https://codex.wordpress.org/Function_Reference/plugin_dir_url
-   * @see https://developer.wordpress.org/plugins/the-basics/best-practices/#prefix-everything
-   */
-  define( 'WPDTRT_CONTENTSECTIONS_URL', plugin_dir_url( __FILE__ ) );
+	/**
+	 * Plugin directory URL path.
+	 *
+	 * @param string $file
+	 * @return The URL (with trailing slash)
+	 * @see https://codex.wordpress.org/Function_Reference/plugin_dir_url
+	 * @see https://developer.wordpress.org/plugins/the-basics/best-practices/#prefix-everything
+	 */
+	define( 'WPDTRT_CONTENTSECTIONS_URL', plugin_dir_url( __FILE__ ) );
 }
 
 /**
@@ -80,7 +80,7 @@ if ( ! defined( 'WPDTRT_CONTENTSECTIONS_URL' ) ) {
  * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/issues/51
  */
 if ( ! defined( 'WPDTRT_PLUGIN_CHILD' ) ) {
-  define( 'WPDTRT_PLUGIN_CHILD', true );
+	define( 'WPDTRT_PLUGIN_CHILD', true );
 }
 
 /**
@@ -90,15 +90,15 @@ if ( ! defined( 'WPDTRT_PLUGIN_CHILD' ) ) {
  * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-WordPress-plugin-dependencies
  */
 if ( defined( 'WPDTRT_CONTENTSECTIONS_TEST_DEPENDENCY' ) ) {
-  $project_root_path = realpath( __DIR__ . '/../../..' ) . '/';
+	$project_root_path = realpath( __DIR__ . '/../../..' ) . '/';
 } else {
-  $project_root_path = '';
+	$project_root_path = '';
 }
 
 require_once $project_root_path . 'vendor/autoload.php';
 
 // sub classes, not loaded via PSR-4.
-// comment out the ones you don't need, edit the ones you do.
+// remove the includes you don't need, edit the files you do need.
 require_once WPDTRT_CONTENTSECTIONS_PATH . 'src/class-wpdtrt-contentsections-plugin.php';
 //require_once WPDTRT_CONTENTSECTIONS_PATH . 'src/class-wpdtrt-contentsections-rewrite.php';
 //require_once WPDTRT_CONTENTSECTIONS_PATH . 'src/class-wpdtrt-contentsections-shortcode.php';
@@ -124,9 +124,6 @@ $debug = new DoTheRightThing\WPDebug\Debug;
 register_activation_hook( dirname( __FILE__ ), 'wpdtrt_contentsections_helper_activate' );
 
 add_action( 'init', 'wpdtrt_contentsections_plugin_init', 0 );
-//add_action( 'init', 'wpdtrt_contentsections_shortcode_init', 100 );
-//add_action( 'init', 'wpdtrt_contentsections_taxonomy_init', 100 );
-//add_action( 'widgets_init', 'wpdtrt_contentsections_widget_init', 10 );
 
 register_deactivation_hook( dirname( __FILE__ ), 'wpdtrt_contentsections_helper_deactivate' );
 
@@ -142,7 +139,7 @@ register_deactivation_hook( dirname( __FILE__ ), 'wpdtrt_contentsections_helper_
  * @see See also Plugin::helper_flush_rewrite_rules()
  */
 function wpdtrt_contentsections_helper_activate() {
-  flush_rewrite_rules();
+	flush_rewrite_rules();
 }
 
 /**
@@ -154,7 +151,7 @@ function wpdtrt_contentsections_helper_activate() {
  * @see See also Plugin::helper_flush_rewrite_rules()
  */
 function wpdtrt_contentsections_helper_deactivate() {
-  flush_rewrite_rules();
+	flush_rewrite_rules();
 }
 
 /**
@@ -170,86 +167,86 @@ function wpdtrt_contentsections_helper_deactivate() {
  * @todo Add a constructor function to WPDTRT_Blocks_Plugin, to explain the options array
  */
 function wpdtrt_contentsections_plugin_init() {
-  // pass object reference between classes via global
-  // because the object does not exist until the WordPress init action has fired
-  global $wpdtrt_contentsections_plugin;
+	// pass object reference between classes via global
+	// because the object does not exist until the WordPress init action has fired
+	global $wpdtrt_contentsections_plugin;
 
-  /**
-   * Global options
-   *
-   * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-global-options Options: Adding global options
-   */
-  $plugin_options = array();
+	/**
+	 * Global options
+	 *
+	 * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-global-options Options: Adding global options
+	 */
+	$plugin_options = array();
 
-  /**
-   * Shortcode or Widget options
-   *
-   * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-shortcode-or-widget-options Options: Adding shortcode or widget options
-   */
-  $instance_options = array();
+	/**
+	 * Shortcode or Widget options
+	 *
+	 * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-shortcode-or-widget-options Options: Adding shortcode or widget options
+	 */
+	$instance_options = array();
 
-  /**
-   * Plugin dependencies
-   *
-   * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-WordPress-plugin-dependencies Options: Adding WordPress plugin dependencies
-   */
-  $plugin_dependencies = array(
-    // Dependency: Content splitting occurs at anchors
-    array(
-      'name'      => 'Better Anchor Links',
-      'slug'      => 'better-anchor-links',
-      'required'  => true,
-    )
-  );
+	/**
+	 * Plugin dependencies
+	 *
+	 * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-WordPress-plugin-dependencies Options: Adding WordPress plugin dependencies
+	 */
+	$plugin_dependencies = array(
+		// Dependency: Content splitting occurs at anchors
+		array(
+			'name'     => 'Better Anchor Links',
+			'slug'     => 'better-anchor-links',
+			'required' => true,
+		),
+	);
 
-  /**
-   *  UI Messages
-   */
-  $ui_messages = array(
-    'demo_data_description'       => __( 'This demo was generated from the following data', 'wpdtrt-contentsections' ),
-    'demo_data_displayed_length'  => __( 'results displayed', 'wpdtrt-contentsections' ),
-    'demo_data_length'            => __( 'results', 'wpdtrt-contentsections' ),
-    'demo_data_title'             => __( 'Demo data', 'wpdtrt-contentsections' ),
-    'demo_date_last_updated'      => __( 'Data last updated', 'wpdtrt-contentsections' ),
-    'demo_sample_title'           => __( 'Demo sample', 'wpdtrt-contentsections' ),
-    'demo_shortcode_title'        => __( 'Demo shortcode', 'wpdtrt-contentsections' ),
-    'insufficient_permissions'    => __( 'Sorry, you do not have sufficient permissions to access this page.', 'wpdtrt-contentsections' ),
-    'no_options_form_description' => __( 'There aren\'t currently any options.', 'wpdtrt-contentsections' ),
-    'noscript_warning'            => __( 'Please enable JavaScript', 'wpdtrt-contentsections' ),
-    'options_form_description'    => __( 'Please enter your preferences.', 'wpdtrt-contentsections' ),
-    'options_form_submit'         => __( 'Save Changes', 'wpdtrt-contentsections' ),
-    'options_form_title'          => __( 'General Settings', 'wpdtrt-contentsections' ),
-    'loading'                     => __( 'Loading latest data...', 'wpdtrt-contentsections' ),
-    'success'                     => __( 'settings successfully updated', 'wpdtrt-contentsections' ),
-  );
+	/**
+	 *  UI Messages
+	 */
+	$ui_messages = array(
+		'demo_data_description'       => __( 'This demo was generated from the following data', 'wpdtrt-contentsections' ),
+		'demo_data_displayed_length'  => __( 'results displayed', 'wpdtrt-contentsections' ),
+		'demo_data_length'            => __( 'results', 'wpdtrt-contentsections' ),
+		'demo_data_title'             => __( 'Demo data', 'wpdtrt-contentsections' ),
+		'demo_date_last_updated'      => __( 'Data last updated', 'wpdtrt-contentsections' ),
+		'demo_sample_title'           => __( 'Demo sample', 'wpdtrt-contentsections' ),
+		'demo_shortcode_title'        => __( 'Demo shortcode', 'wpdtrt-contentsections' ),
+		'insufficient_permissions'    => __( 'Sorry, you do not have sufficient permissions to access this page.', 'wpdtrt-contentsections' ),
+		'no_options_form_description' => __( 'There aren\'t currently any options.', 'wpdtrt-contentsections' ),
+		'noscript_warning'            => __( 'Please enable JavaScript', 'wpdtrt-contentsections' ),
+		'options_form_description'    => __( 'Please enter your preferences.', 'wpdtrt-contentsections' ),
+		'options_form_submit'         => __( 'Save Changes', 'wpdtrt-contentsections' ),
+		'options_form_title'          => __( 'General Settings', 'wpdtrt-contentsections' ),
+		'loading'                     => __( 'Loading latest data...', 'wpdtrt-contentsections' ),
+		'success'                     => __( 'settings successfully updated', 'wpdtrt-contentsections' ),
+	);
 
-  /**
-   * Demo shortcode
-   *
-   * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Settings-page:-Adding-a-demo-shortcode Settings page: Adding a demo shortcode
-   */
-  $demo_shortcode_params = array();
+	/**
+	 * Demo shortcode
+	 *
+	 * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Settings-page:-Adding-a-demo-shortcode Settings page: Adding a demo shortcode
+	 */
+	$demo_shortcode_params = array();
 
-  /**
-   * Plugin configuration
-   */
-  $wpdtrt_contentsections_plugin = new WPDTRT_Contentsections_Plugin(
-    array(
-      'path'                  => WPDTRT_CONTENTSECTIONS_PATH,
-      'url'                   => WPDTRT_CONTENTSECTIONS_URL,
-      'version'               => WPDTRT_CONTENTSECTIONS_VERSION,
-      'prefix'                => 'wpdtrt_contentsections',
-      'slug'                  => 'wpdtrt-contentsections',
-      'menu_title'            => __( 'Content sections', 'wpdtrt-contentsections' ),
-      'settings_title'        => __( 'Settings', 'wpdtrt-contentsections' ),
-      'developer_prefix'      => 'DTRT',
-      'messages'              => $ui_messages,
-      'plugin_options'        => $plugin_options,
-      'instance_options'      => $instance_options,
-      'plugin_dependencies'   => $plugin_dependencies,
-      'demo_shortcode_params' => $demo_shortcode_params,
-    )
-  );
+	/**
+	 * Plugin configuration
+	 */
+	$wpdtrt_contentsections_plugin = new WPDTRT_Contentsections_Plugin(
+		array(
+			'path'                  => WPDTRT_CONTENTSECTIONS_PATH,
+			'url'                   => WPDTRT_CONTENTSECTIONS_URL,
+			'version'               => WPDTRT_CONTENTSECTIONS_VERSION,
+			'prefix'                => 'wpdtrt_contentsections',
+			'slug'                  => 'wpdtrt-contentsections',
+			'menu_title'            => __( 'Content sections', 'wpdtrt-contentsections' ),
+			'settings_title'        => __( 'Settings', 'wpdtrt-contentsections' ),
+			'developer_prefix'      => 'DTRT',
+			'messages'              => $ui_messages,
+			'plugin_options'        => $plugin_options,
+			'instance_options'      => $instance_options,
+			'plugin_dependencies'   => $plugin_dependencies,
+			'demo_shortcode_params' => $demo_shortcode_params,
+		)
+	);
 }
 
 /**
@@ -261,11 +258,11 @@ function wpdtrt_contentsections_plugin_init() {
  */
 function wpdtrt_contentsections_rewrite_init() {
 
-  global $wpdtrt_contentsections_plugin;
+	global $wpdtrt_contentsections_plugin;
 
-  $wpdtrt_contentsections_rewrite = new WPDTRT_Contentsections_Rewrite(
-    array()
-  );
+	$wpdtrt_contentsections_rewrite = new WPDTRT_Contentsections_Rewrite(
+		array()
+	);
 }
 
 /**
@@ -277,11 +274,11 @@ function wpdtrt_contentsections_rewrite_init() {
  */
 function wpdtrt_contentsections_shortcode_init() {
 
-  global $wpdtrt_contentsections_plugin;
+	global $wpdtrt_contentsections_plugin;
 
-  $wpdtrt_contentsections_shortcode = new WPDTRT_Contentsections_Shortcode(
-    array()
-  );
+	$wpdtrt_contentsections_shortcode = new WPDTRT_Contentsections_Shortcode(
+		array()
+	);
 }
 
 /**
@@ -295,14 +292,14 @@ function wpdtrt_contentsections_shortcode_init() {
  */
 function wpdtrt_contentsections_taxonomy_init() {
 
-  global $wpdtrt_contentsections_plugin;
+	global $wpdtrt_contentsections_plugin;
 
-  $wpdtrt_contentsections_taxonomy = new WPDTRT_Contentsections_Taxonomy(
-    array()
-  );
+	$wpdtrt_contentsections_taxonomy = new WPDTRT_Contentsections_Taxonomy(
+		array()
+	);
 
-  // return a reference for unit testing.
-  return $wpdtrt_contentsections_taxonomy;
+	// return a reference for unit testing.
+	return $wpdtrt_contentsections_taxonomy;
 }
 
 /**
@@ -324,11 +321,11 @@ function wpdtrt_contentsections_taxonomy_init() {
  */
 function wpdtrt_contentsections_widget_init() {
 
-  global $wpdtrt_contentsections_plugin;
+	global $wpdtrt_contentsections_plugin;
 
-  $wpdtrt_contentsections_widget = new WPDTRT_Contentsections_Widget(
-    array()
-  );
+	$wpdtrt_contentsections_widget = new WPDTRT_Contentsections_Widget(
+		array()
+	);
 
-  register_widget( $wpdtrt_contentsections_widget );
+	register_widget( $wpdtrt_contentsections_widget );
 }
