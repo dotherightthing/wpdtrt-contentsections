@@ -106,6 +106,18 @@ class WPDTRT_ContentsectionsTest extends WP_UnitTestCase {
 	 */
 
 	/**
+	* Demo test
+	*/
+	public function test_placeholder() {
+
+		$this->assertEquals(
+			'abc123',
+			'abc123',
+			'Strings do not match'
+		);
+	}
+
+	/**
 	 * Test better-anchor-links dependency injection
 	 * @uses ludek/better-anchor-links
 	 */
