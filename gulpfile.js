@@ -8,7 +8,7 @@
  *    gulp dist --gulpfile ./vendor/dotherightthing/wpdtrt-plugin-boilerplate/gulpfile.js --cwd ./
  *
  * @package     WPDTRT_Contentsections
- * @version 	0.1.3
+ * @version 	0.1.4
  * @since       0.7.0 DTRT WordPress Plugin Boilerplate Generator
  */
  
