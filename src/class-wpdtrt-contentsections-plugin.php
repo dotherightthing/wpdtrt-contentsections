@@ -65,6 +65,7 @@ class WPDTRT_Contentsections_Plugin extends DoTheRightThing\WPDTRT_Plugin_Boiler
 	 * for compatibility with stickyNavbar.js
 	 * This repurposes the anchors injected by the better-anchor-links plugin
 	 *
+	 * @param string $content Content
 	 * @uses https://wordpress.org/plugins/better-anchor-links/
 	 */
 	function filter_content_sections( $content ) {
