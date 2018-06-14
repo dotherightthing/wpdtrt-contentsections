@@ -3,7 +3,7 @@
  * Plugin Name:  DTRT Content sections
  * Plugin URI:   https://github.com/dotherightthing/wpdtrt-contentsections
  * Description:  Split the WordPress content area into sections.
- * Version:      0.1.4
+ * Version:      0.1.5
  * Author:       Dan Smith
  * Author URI:   https://profiles.wordpress.org/dotherightthingnz
  * License:      GPLv2 or later
@@ -43,7 +43,7 @@ if ( ! defined( 'WPDTRT_CONTENTSECTIONS_VERSION' ) ) {
 	 * @see $plugin_data = get_plugin_data( __FILE__ ); $plugin_version = $plugin_data['Version'];
 	 * @see https://wordpress.stackexchange.com/questions/18268/i-want-to-get-a-plugin-version-number-dynamically
 	 */
-	define( 'WPDTRT_CONTENTSECTIONS_VERSION', '0.1.4' );
+	define( 'WPDTRT_CONTENTSECTIONS_VERSION', '0.1.5' );
 }
 
 if ( ! defined( 'WPDTRT_CONTENTSECTIONS_PATH' ) ) {
@@ -100,10 +100,6 @@ require_once $project_root_path . 'vendor/autoload.php';
 // sub classes, not loaded via PSR-4.
 // remove the includes you don't need, edit the files you do need.
 require_once WPDTRT_CONTENTSECTIONS_PATH . 'src/class-wpdtrt-contentsections-plugin.php';
-//require_once WPDTRT_CONTENTSECTIONS_PATH . 'src/class-wpdtrt-contentsections-rewrite.php';
-//require_once WPDTRT_CONTENTSECTIONS_PATH . 'src/class-wpdtrt-contentsections-shortcode.php';
-//require_once WPDTRT_CONTENTSECTIONS_PATH . 'src/class-wpdtrt-contentsections-taxonomy.php';
-//require_once WPDTRT_CONTENTSECTIONS_PATH . 'src/class-wpdtrt-contentsections-widget.php';
 
 // log & trace helpers.
 global $debug;
