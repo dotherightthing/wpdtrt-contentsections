@@ -14,7 +14,7 @@
  * @since   1.0.0
  * @version 1.0.0
  */
-class WPDTRT_Contentsections_Shortcode extends DoTheRightThing\WPDTRT_Plugin_Boilerplate\r_1_4_25\Shortcode {
+class WPDTRT_Contentsections_Shortcode extends DoTheRightThing\WPDTRT_Plugin_Boilerplate\r_1_4_36\Shortcode {
 
 	/**
 	 * Supplement shortcode initialisation.
