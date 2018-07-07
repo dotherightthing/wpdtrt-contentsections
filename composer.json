@@ -19,6 +19,9 @@
     "require": {
         "dotherightthing/wpdtrt-plugin-boilerplate": "^1.0.0"
     },
+    "require-dev": {
+        "wpackagist-plugin/better-anchor-links": "1.7.5"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
@@ -41,8 +44,5 @@
     ],
     "config": {
         "vendor-dir": "vendor"
-    },
-    "require-dev": {
-        "wpackagist-plugin/better-anchor-links": "1.7.5"
     }
 }
