@@ -20,10 +20,11 @@ require_once $_tests_dir . '/includes/functions.php';
 
 /**
  * Manually load the plugin being tested, and any dependencies.
+ * wpackagist installs plugins to wp-content/plugins/
  */
 function _manually_load_plugin() {
 	require dirname( dirname( __FILE__ ) ) . '/wpdtrt-contentsections.php';
-	require dirname( dirname( __FILE__ ) ) . '/vendor/ludek/better-anchor-links/auto-anchor-list.php';
+	require dirname( dirname( __FILE__ ) ) . '/wp-content/plugins/better-anchor-links/auto-anchor-list.php';
 }
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 

@@ -23,17 +23,18 @@
     "prefer-stable": true,
     "repositories": [
         {
-            "type": "composer",
-            "url": "https://repo.packagist.com/dotherightthing/"
+            "type": "vcs",
+            "url": "https://github.com/dotherightthing/wpdtrt-plugin-boilerplate"
         },
         {
-            "packagist.org": false
+            "type": "composer",
+            "url": "https://wpackagist.org"
         }
     ],
     "config": {
         "vendor-dir": "vendor"
     },
     "require-dev": {
-        "ludek/better-anchor-links": "1.7.5"
+        "wpackagist-plugin/better-anchor-links": "1.7.5"
     }
 }
