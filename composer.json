@@ -20,6 +20,10 @@
         "dotherightthing/wpdtrt-plugin-boilerplate": "^1.0.0"
     },
     "require-dev": {
+        "phpdocumentor/phpdocumentor": "2.9.0",
+        "phpunit/phpunit": "^5.7",
+        "psy/psysh" : "~0.6",
+        "wp-cli/wp-cli" : "~0.22",
         "wpackagist-plugin/better-anchor-links": "1.7.5"
     },
     "minimum-stability": "dev",
