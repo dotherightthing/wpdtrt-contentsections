@@ -84,7 +84,7 @@ if ( ! defined( 'WPDTRT_PLUGIN_CHILD' ) ) {
 }
 
 /**
- * Determine the correct path, from wpdtrt-foobar to the PSR-4 autoloader
+ * Determine the correct path, from wpdtrt-contentsections to the PSR-4 autoloader
  *
  * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/issues/104
  * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-WordPress-plugin-dependencies
