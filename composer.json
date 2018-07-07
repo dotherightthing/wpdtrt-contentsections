@@ -27,6 +27,14 @@
             "url": "https://github.com/dotherightthing/wpdtrt-plugin-boilerplate"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/dotherightthing/wpdtrt-debug"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/dotherightthing/tgm-plugin-activation"
+        },
+        {
             "type": "composer",
             "url": "https://wpackagist.org"
         }
