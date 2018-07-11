@@ -56,6 +56,8 @@ before_install:
   # Fix PHPDoc error:
   # "Unable to find the `dot` command of the GraphViz package. Is GraphViz correctly installed and present in your path?"
   - sudo apt-get install graphviz
+  # See dotherightthing/generator-wpdtrt-plugin-boilerplate#88
+  - composer config -g github-oauth.github.com $GH_TOKEN
 
 # Install dependencies
 # https://docs.travis-ci.com/user/customizing-the-build/#Customizing-the-Installation-Step
@@ -103,7 +105,7 @@ notifications:
 deploy:
   provider: releases
   api_key:
-    secure: $GITHUB_AUTH
+    secure: $GH_TOKEN
   file: 'release.zip'
   # prevent Travis CI from resetting the working directory
   # which deletes all changes made during the build 
