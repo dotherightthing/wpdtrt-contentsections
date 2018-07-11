@@ -17,7 +17,7 @@
         "issues": "https://github.com/dotherightthing/wpdtrt-contentsections/issues"
     },
     "require": {
-        "dotherightthing/wpdtrt-plugin-boilerplate": "^1.4.36"
+        "dotherightthing/wpdtrt-plugin-boilerplate": "^1.4.38"
     },
     "require-dev": {
         "phpdocumentor/phpdocumentor": "2.9.0",

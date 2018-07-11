@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "wpdtrt-contentsections",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Split the WordPress content area into sections.",
   "main": "wpdtrt-contentsections.php",
   "person": {
@@ -9,6 +9,23 @@
     "email": "dev@dotherightthing.co.nz",
     "url": "https://profiles.wordpress.org/dotherightthingnz"
   },
+  "contributors": [
+    {
+      "name": "Dan Smith",
+      "email": "dev@dotherightthing.co.nz",
+      "url": "https://profiles.wordpress.org/dotherightthingnz"
+    }
+  ],
+  "bugs": {
+    "url" : "https://github.com/dotherightthing/wpdtrt-contentsections/issues"
+  },
+  "keywords": [
+    "html5",
+    "section",
+    "block",
+    "heading",
+    "split"
+  ],
   "devDependencies": {
     "gulp": "^3.9.1"
   },
