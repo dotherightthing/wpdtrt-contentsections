@@ -32,6 +32,7 @@
                 "name": "Better Anchor Links",
                 "host": "wpackagist",
                 "repository": "wpackagist-plugin/better-anchor-links",
+                "file": "auto-anchor-list.php",
                 "description": "Provides the anchor points to split the content at"
             }
         ]

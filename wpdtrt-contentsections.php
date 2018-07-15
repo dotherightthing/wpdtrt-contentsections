@@ -189,20 +189,6 @@ function wpdtrt_contentsections_plugin_init() {
 	$instance_options = array();
 
 	/**
-	 * Plugin dependencies
-	 *
-	 * @see https://github.com/dotherightthing/wpdtrt-plugin-boilerplate/wiki/Options:-Adding-WordPress-plugin-dependencies Options: Adding WordPress plugin dependencies
-	 */
-	$plugin_dependencies = array(
-		// Dependency: Content splitting occurs at anchors
-		array(
-			'name'     => 'Better Anchor Links',
-			'slug'     => 'better-anchor-links',
-			'required' => true,
-		),
-	);
-
-	/**
 	 *  UI Messages
 	 */
 	$ui_messages = array(
@@ -246,7 +232,6 @@ function wpdtrt_contentsections_plugin_init() {
 			'messages'              => $ui_messages,
 			'plugin_options'        => $plugin_options,
 			'instance_options'      => $instance_options,
-			'plugin_dependencies'   => $plugin_dependencies,
 			'demo_shortcode_params' => $demo_shortcode_params,
 		)
 	);

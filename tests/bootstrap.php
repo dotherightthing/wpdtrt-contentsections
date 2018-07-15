@@ -20,11 +20,11 @@ require_once $_tests_dir . '/includes/functions.php';
 
 /**
  * Manually load the plugin being tested, and any dependencies.
- * wpackagist installs plugins to wp-content/plugins/
  */
 function _manually_load_plugin() {
 	require dirname( dirname( __FILE__ ) ) . '/wpdtrt-contentsections.php';
-	require dirname( dirname( __FILE__ ) ) . '/wp-content/plugins/better-anchor-links/auto-anchor-list.php';
+
+	WPDTRT_Contentsections_Plugin::set_wp_composer_dependencies( '../composer.json', 'wpunit' );
 }
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 
