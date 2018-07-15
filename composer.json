@@ -26,6 +26,16 @@
         "wp-cli/wp-cli" : "~0.22",
         "wpackagist-plugin/better-anchor-links": "1.7.5"
     },
+    "extras": {
+        "require-wp": [
+            {
+                "name": "Better Anchor Links",
+                "host": "wpackagist",
+                "repository": "wpackagist-plugin/better-anchor-links",
+                "description": "Provides the anchor points to split the content at"
+            }
+        ]
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
