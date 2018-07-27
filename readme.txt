@@ -6,7 +6,7 @@ Tags: html5, section, block, heading, split
 Requires at least: 4.9.5
 Tested up to: 4.9.5
 Requires PHP: 5.6.30
-Stable tag: 0.2.2
+Stable tag: 0.2.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ Split the WordPress content area into sections.
 2. The caption for ./images/screenshot-2.(png|jpg|jpeg|gif)
 
 == Changelog ==
+
+= 0.2.3 =
+* Update wpdtrt-plugin-boilerplate to 1.5.3
+* Sync with generator-wpdtrt-plugin-boilerplate 0.8.2
 
 = 0.2.2 =
 * Update wpdtrt-plugin-boilerplate to 1.5.1
